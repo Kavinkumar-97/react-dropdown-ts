@@ -1,4 +1,5 @@
 import './App.css'
+import arrowIcon from './assets/arrow-down.png'
 import {useState} from "react";
 import DropDown from "./components/DropDown.tsx";
 
@@ -22,7 +23,10 @@ function App() {
     <>
       <div className="root">
         <h2 className="heading">Should you use this dropdown</h2>
-        <button className="dropdown-toggle" onMouseEnter={onHoverHandler}>{selectedItem || 'Select'}</button>
+        <button className="dropdown-toggle" onMouseEnter={onHoverHandler}>
+          <>{selectedItem || 'Select'}</>
+          <img src={arrowIcon} alt="arrow"/>
+        </button>
         {showDropDown && (<DropDown items={items} onSelectItem={onSelectItem}/>)}
       </div>
     </>

@@ -10,6 +10,7 @@
   height: 44px;
   border-radius: 0;
   background-color: transparent;
+  text-align: left;
 }
 
 .dropdownItem:hover {

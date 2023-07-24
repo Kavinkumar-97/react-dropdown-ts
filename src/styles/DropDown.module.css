@@ -1,0 +1,17 @@
+.dropdown {
+  margin-top: 0.25rem;
+  border-radius: 8px;
+  box-shadow: 0 0.125rem 2rem rgba(0, 0, 0, .075);
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.dropdownItem {
+  height: 44px;
+  border-radius: 0;
+  background-color: transparent;
+}
+
+.dropdownItem:hover {
+  background-color: #eee;
+}
